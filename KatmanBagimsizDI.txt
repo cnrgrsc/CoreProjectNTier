@@ -1,0 +1,7 @@
+﻿Biz Dependency Injection'in otomatik yapılandırılmasını farklı katmanlardan kullanmak istedigimizde(Aksi halde UI DAL'daki yapıyı direkt kullanmak zorunda kalır) o yarattıgımız tiplerin Dependency Injection'a girebilmesi icin o otomatik servis yapısını olusturmamız gerekir... Yani .Net Core bizim yeni yarattıgımız tipi otomatik DI'a biz ona söylemeden çekemez...Dolayısıyla el ile instance almak zorunda kalırız...Ama bu da .Net Core'un tüm mimari prensibine aykırıdır... Farklı katmanlarda oldugumuz zamanda bu tipleri startup'tan belirtmek Katmanlı Mimari prensibine aykırıdır... Her ne kadar .Net Core bu konuda özgür gibi gözükse de bunu yapmamak en saglıklısıdır ve profesyonel bir yaklasımdır... Dolayısıyla bu Dependency Injection'i farklı katmandan tetiklemek gerekir... 
+
+Burada hem Autofac kütüphanesi ile farklı katmanda DependencyInjection sistemi hem de Autofac kütüphanesi olmadan farklı katmanda DependencyInjection yontemi gösterilecektir...
+
+1)Autofac => Büyük kurumsal sirketlerin en cok tercih ettigi DI kütüphanesidir...Bu kütüphane sayesinde farklı bir katmanda sizin yapılarınız DI icerisine yerleştirilebilir. (DependencyResolvers isimli klasor icinde gösterilmiştir)
+
+2)Manual DI => Belirli durumlarda kütüphaneye erişiminiz mümkün olmayabilir veya efektif olmayabilir...Bu durumlarda da sizin manual DI yapabilmeniz gerekir...Bunun icin Extension metot yaratırsınız... (ServiceExtensions isimli klasor icinde gösterilmiştir....)

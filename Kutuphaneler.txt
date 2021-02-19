@@ -1,0 +1,11 @@
+﻿*Microsoft.EntityFrameworkCore.SqlServer => EntityFramework islemlerini yapabilmek icin
+*Microsoft.EntityFrameworkCore.Proxies => LazyLoading tetiklenebilmesi icin
+*Microsoft.EntityFrameworkCore.Tools => migration islemlerini terminalden yapabilmek icin gerekli
+*Microsoft.AspNetCore.Identity => Sizin .Net Core'un sundugu Identity yapısını kullanabilmeniz icin gerekli olan kütüphanedir.
+*Microsoft.EntityFrameworkCore.Design => RunTime'da olusacak Configuration ayarlamalarını saglar
+*Microsoft.AspNetCore.Identity.EntittyFrameworkCore => IdentityDbContext'in gelebilmesi icin gerekli olan yapı
+*Microsoft.Extension.Configuration
+*Autofac => services.AddTransient gibi yapıları baska katmanlardan da yapıp katman bagımsız hale getirebilmek adına ihtiyacımız olan yontemlerden birisi icin kullanıdgımız kütüphaneidr...
+*Autofac.Extensions.DependencyInjection => Autofac kütüphanesinin DbContext sınıfıyla iletişime gecebilmesi adına servislerini belirleyebilmesi icin ihtiyacımız olan kütüphanedir
+
+*System.Configuration.ConfigurationManager => Configuration dosyalarını katmanlar arası iletişime sokabilmek icin indirdigimiz kütüphanedir...
